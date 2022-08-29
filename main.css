@@ -188,7 +188,7 @@ li{
 	line-height: 1.2em;
 	text-decoration: none;
 	display: block;
-	padding: .4rem .5em .4em;
+	padding: .6em .5em .4em;
 	color: black;
 	font-size: calc(0.9em + .2vw);
 }
@@ -431,7 +431,7 @@ li{
 #section-tag{
 	background-color: #eee8aadf;
 	border-radius: 4px;
-	padding: 0 .5em .2em;
+	padding: .2em .5em .2em;
 	color: white;
 	font-size: .7rem;
 	font-weight: bold;
