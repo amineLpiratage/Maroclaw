@@ -192,7 +192,11 @@ li{
 	color: black;
 	font-size: calc(0.9em + .2vw);
 }
-
+@media (min-width: 860px){
+	.nav-sections a{
+	padding: .5em .5em .4em;
+}
+}
 .nav-sections ul{
 	padding: 0;
 	list-style-type: none;
