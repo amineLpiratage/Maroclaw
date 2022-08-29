@@ -651,7 +651,7 @@ main img{
 	flex-grow: 1;
 }
 .card-content h3{
-	margin: .5em; 
+	margin: 1em .5em.5em; 
 }
 .card-body{
 	font-weight: 300;
