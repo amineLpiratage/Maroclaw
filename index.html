@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+	<title>Maroc Law</title>
+</head>
+<body>
+<header>
+ <div class="top-bar">
+ 	<div class="post-with-us">
+ 		<h4><a href="#">للنشر في موقع مغرب القانون  </a></h4>
+ 	</div>
+	<a href="#" class="switch"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="17px" height="17px"><path d="M23,11H18.92a6.924,6.924,0,0,0-.429-1.607l3.527-2.044a1,1,0,1,0-1-1.731l-3.53,2.047a7.062,7.062,0,0,0-1.149-1.15l2.046-3.531a1,1,0,0,0-1.731-1L14.607,5.509A6.9,6.9,0,0,0,13,5.08V1a1,1,0,0,0-2,0V5.08a6.9,6.9,0,0,0-1.607.429L7.349,1.982a1,1,0,0,0-1.731,1L7.664,6.515a7.062,7.062,0,0,0-1.149,1.15L2.985,5.618a1,1,0,1,0-1,1.731L5.509,9.393A6.924,6.924,0,0,0,5.08,11H1a1,1,0,0,0,0,2H5.08a6.924,6.924,0,0,0,.429,1.607L1.982,16.651a1,1,0,1,0,1,1.731l3.53-2.047a7.062,7.062,0,0,0,1.149,1.15L5.618,21.016a1,1,0,0,0,1.731,1l2.044-3.527A6.947,6.947,0,0,0,11,18.92V23a1,1,0,0,0,2,0V18.92a6.947,6.947,0,0,0,1.607-.429l2.044,3.527a1,1,0,0,0,1.731-1l-2.046-3.531a7.062,7.062,0,0,0,1.149-1.15l3.53,2.047a1,1,0,1,0,1-1.731l-3.527-2.044A6.924,6.924,0,0,0,18.92,13H23A1,1,0,0,0,23,11ZM12,17c-6.608-.21-6.606-9.791,0-10C18.608,7.21,18.606,16.791,12,17Z" fill="#ebb013"/></svg></a>
+	<a href="#" class="lang">FR</a>
+	<a href="#" class="lang">EN</a>
+	<a href="#" id ="logo" style="margin-left: auto;"><img src="images/head-logo.png"></a>
+ </div>
+</header>
+
+<nav style="display: flex;padding: calc(.1em + .4vw) 1vw calc(.1em + .5vw);background-color:#fff;border-bottom: 3px solid black;align-items: center;position: sticky;top: 0;z-index: 5;">
+	<a href="#" class="menu-burger" id="menu-burger" aria-expanded="false">
+		<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20"><rect y="11" width="24" height="2"/><rect y="4" width="24" height="2"/><rect y="18" width="24" height="2"/></svg>
+
+</a>
+<div class="layer-blur" id="layer-blur"></div>
+<div class="fixed" id="nav-menu">
+<div class="menu-dropdown" >
+	<div style="display: flex;align-items: center;margin-top: .7em;">
+		<img id="exit-dropdown" width="16px" src="images/exit.svg">
+		<span style="font-size: 1.2em;margin: 0 1em;flex: 1;text-align: center;"> تابعنا على : </span>
+		<div class="dropdown-sm">
+		<a href=""><img width="25px" height="25px" src="images/instagram-brands.svg"></a>
+		<a href=""><img width="25px" src="images/facebook-brands.svg"></a>
+		<a href=""><img width="25px" src="images/twitter-brands.svg"></a>
+		</div>
+	</div>
+	<ul class="nav-menu">
+		<li class="dropdown-item"><h3 class="bold"><a href="#">فضاء التشريع  </a></h3>
+			<ul>
+			  <li><a href="#">الدستور المغربي</a></li>
+              <li><a href="#">قوانين تنظيمية</a></li>
+              <li><a href="#">قوانين عادية</a></li>
+              <li><a href="#">مذكرات ودوريات ومناشير</a></li>
+              <li><a href="#">مراسيم وقرارات</a></li>
+              <li><a href="#">مشاريع القوانين</a></li>
+              <li><a href="#">مسودات القوانين</a></li>
+              <li><a href="#">معاهدات واتفاقيات دولية</a></li>
+              <li><a href="#">مقترحات القوانين</a></li>
+			</ul>
+		</li>
+		<li class="dropdown-item"><h3><a href="#">مقالات</a></h3>
+			<ul>
+			  <li><a href="#">لقانون الخاص</a></li>
+              <li><a href="#">القانون العام</a></li>
+              <li><a href="#">مقالات مقارنة</a></li>
+              <li><a href="#">مقالات منوعة</a></li>
+              <li><a href="#">مقالات بالفرنسية</a></li>
+              <li><a href="#">مقالات بالانجليزية</a></li>
+			</ul>
+		</li>
+		<li class="dropdown-item"><h3><a href="#">الإجتهاد القضائي</a></h3>
+			<ul>
+			  <li><a href="#">اجتهادات مقارنة</a></li>
+              <li><a href="#">الاحوال الشخصية والميراث</a></li>
+              <li><a href="#">القضاء الدستوري</a></li>
+              <li><a href="#">القضاء المالي</a></li>
+              <li><a href="#">المادة الاجتماعية</a></li>
+              <li><a href="#">المادة الادارية</a></li>
+              <li><a href="#">المادة التجارية</a></li>
+              <li><a href="#">المادة الجنائية</a></li>
+              <li><a href="#">المادة العقارية</a></li>
+              <li><a href="#">المادة المدنية</a></li>
+			</ul>
+		</li>
+		<li class="dropdown-item"><h3><a href="#">المكتبة</a></h3>
+			<ul>
+			  <li><a href="#">أطروحات جامعية</a></li>
+              <li><a href="#">تقارير</a></li>
+              <li><a href="#">دراسات</a></li>
+              <li><a href="#">دلائل علمية</a></li>
+              <li><a href="#">رسائل جامعية</a></li>
+              <li><a href="#">عروض الماستر</a></li>
+              <li><a href="#">كتب ومؤلفات</a></li>
+              <li><a href="#">مجلات</a></li>
+			</ul>
+		</li>
+		<li><a href="#">أنشطة علمية</a></li>
+		<li><a href="#">ماستر و دكتوراه</a></li>
+		<li><a href="#">مباريات و امتحانات</a></li>
+	</ul>
+</div>
+</div>
+	<div class="nav-sections">
+		<ul>
+			<li><a href="#">فضاء التشريع</a></li>
+			<li><a href="#">مقالات</a></li>
+			<li><a href="#">الإجتهاد القضائي</a></li>
+			<li><a href="#">المكتبة</a></li>
+			<li><a href="#">أنشطة علمية</a></li>
+			<li><a href="#">ماستر و دكتوراه</a></li>
+			<li><a href="#">مباريات و امتحانات</a></li>
+		</ul>
+	</div>
+	<!-- <div class="search">
+	<form class="search-box">
+			<input type="text" name="" class="search-txt" placeholder="ابحث" />
+			<input type="submit" name="submit" class="search-submit">
+	</form>
+	</div> -->
+	
+</nav>
+
+<main class="main-content">
+	<section class="top-section">
+		
+		<div class="latest">
+		<div class="slider">
+			<div class="sld">
+			<div class="slider-img">
+				<a href="#"><img style="max-width: 100%;" src="images/ukraine.webp" alt="ukraine"></a>
+				<div class="slider-nav">
+					<div class="zaap"></div>
+					<div class="zaap"></div>
+					<div class="zaap"></div>
+					<div class="zaap"></div>
+					<div class="zaap"></div>
+					<div class="zaap"></div>
+				</div>
+			</div>
+			<div class="slider-description">
+				<h1><a href="#">مخاوف من كارثة نووية.. تحذيرات أوروبية من خطورة الوضع بمحطة زاباروجيا وروسيا تتهم أوكرانيا بقصف منطقة النظائر المشعة
+				</a></h1>
+				<span> توالت التحذيرات بشأن خطورة الوضع في محطة زاباروجيا النووية الواقعة تحت سيطرة القوات الروسية بجنوب أوكرانيا، في حين اتهمت موسكو القوات الأوكرانية بقصف المحطة مجددا اليومية الجمعة. </span>
+
+			</div>
+		</div>
+		</div>
+		<!-- Here Goes the bottom mostajadat -->
+
+		<div class="latest-articles">
+			<div class="top-header-dec">
+			<h3>آخر المستجدات </h3>
+			</div>
+			<ol>
+				<li><a href="#" id="section-tag">
+					<span> القانون العام </span>
+				</a>
+					<a href="#">
+					<div class="description">
+						<h4>مستجدات قانونية جديدة تدخل حيز التنفيذ بشأن البارود والمواد المتفجرة</h4>
+					</div>
+					<span><date>13:56</date></span>
+				</a></li>
+				<li><a href="#" id="section-tag">
+					<span> القانون العام </span>
+				</a>
+					<a href="#">
+					<div class="description">
+						<h4>مستجدات قانونية جديدة تدخل حيز التنفيذ بشأن البارود والمواد المتفجرة</h4>
+					</div>
+					<span><date>13:56</date></span>
+				</a></li>
+				<li><a href="#" id="section-tag">
+					<span> القانون العام </span>
+				</a>
+					<a href="#">
+					<div class="description">
+						<h4>مستجدات قانونية جديدة تدخل حيز التنفيذ بشأن البارود والمواد المتفجرة</h4>
+					</div>
+					<span><date>13:56</date></span>
+				</a></li>
+
+			</ol>
+
+		</div>
+		</div>
+		<div class="trending card">
+			<div class="top-section-header top-header-dec">
+			<h3 > الأكثر قراءة  </h3>
+			</div>
+			<ol>
+				<li><a href="#">
+شقة بموسكو وسيارة "ميني كوبر" بثلاث لوحات.. الأمن الروسي ينشر فيديو لتحركات المتهمة باغتيال ابنة المنظر السياسي لبوتين
+</a></li>
+				<li><a href="#">
+شقة بموسكو وسيارة "ميني كوبر" بثلاث لوحات.. الأمن الروسي ينشر فيديو لتحركات المتهمة باغتيال ابنة المنظر السياسي لبوتين
+</a></li>
+				<li><a href="#">
+شقة بموسكو وسيارة "ميني كوبر" بثلاث لوحات.. الأمن الروسي ينشر فيديو لتحركات المتهمة باغتيال ابنة المنظر السياسي لبوتين
+</a></li>
+				<li><a href="#">
+شقة بموسكو وسيارة "ميني كوبر" بثلاث لوحات.. الأمن الروسي ينشر فيديو لتحركات المتهمة باغتيال ابنة المنظر السياسي لبوتين
+</a></li>
+				<li><a href="#">
+شقة بموسكو وسيارة "ميني كوبر" بثلاث لوحات.. الأمن الروسي ينشر فيديو لتحركات المتهمة باغتيال ابنة المنظر السياسي لبوتين
+</a></li>
+
+			</ol>
+		</div>
+		<div class="container">
+		 
+		<section class="section-2">
+			<div class="top-section-header top-header-dec">
+				<h3><a href=""> المنبر القانوني   </a></h3>
+			</div>
+			<div class="grid-container">
+			<article class="article-card">
+				<div class="card-img">
+					<img src="vaccin_production_sante.webp">
+				</div>
+				<div class="card-content">
+					<h3 class="card-title">
+						<a href="#">علامة استفهام (34) | لماذا يفترق الحبيبان؟</a>
+					</h3>
+					<div class="card-body">
+						<p>يقعان في الحب، يزلزل الغرام حياتهما، يقرران الارتباط ليعيشا معًا حتى الموت، تعترضهما مشاكل عديدة من عائلتهما ومن المجتمع، يواجهان الأمر بشجاعة وصبر وينتصران، يتزوجان.</p>
+					</div>
+					<div class="card-footer">
+						<svg class="icon-quotes icon" viewBox="0 0 20 20" version="1.1" aria-hidden="true"><title>quotes</title><path class="icon-main-color" d="M7.24 2.93a13.6 13.6 0 0 0-4.4 3.58 7.78 7.78 0 0 0-2 4.87 6.3 6.3 0 0 0 1.11 4A3.64 3.64 0 0 0 5 16.69a2.93 2.93 0 0 0 2.09-.85 2.52 2.52 0 0 0 .87-1.9 3.6 3.6 0 0 0-.17-1.09 2.35 2.35 0 0 0-.55-.85 2.71 2.71 0 0 0-1.06-.66 5.82 5.82 0 0 0-1.93-.26H2.14l.08-.89A7.8 7.8 0 0 1 4 5.77a12.25 12.25 0 0 1 3.37-2.63zM3 9.43l.1.11c0 .23-.07.46-.1.7h.74l.07.08v-.08h.4a6.46 6.46 0 0 1 2.21.32 3.38 3.38 0 0 1 1.37.86 3.08 3.08 0 0 1 .71 1.18 4.32 4.32 0 0 1 .21 1.34 3.32 3.32 0 0 1-1.12 2.49A3.74 3.74 0 0 1 5 17.5a4.43 4.43 0 0 1-3.69-1.62A7.09 7.09 0 0 1 0 11.38 8.6 8.6 0 0 1 2.21 6a14.43 14.43 0 0 1 5.34-4.12l1 1.58a12.06 12.06 0 0 0-3.9 2.84 6.68 6.68 0 0 0-1.5 3.13zm15.46-6.5a13.6 13.6 0 0 0-4.4 3.58 7.78 7.78 0 0 0-2 4.87 6.3 6.3 0 0 0 1.11 4 3.64 3.64 0 0 0 3.06 1.32 2.93 2.93 0 0 0 2.09-.85 2.52 2.52 0 0 0 .87-1.9 3.6 3.6 0 0 0-.19-1.1 2.35 2.35 0 0 0-.53-.87 2.71 2.71 0 0 0-1.06-.66 5.82 5.82 0 0 0-1.93-.26h-2.09l.08-.89a7.8 7.8 0 0 1 1.81-4.4 12.25 12.25 0 0 1 3.34-2.63zm-4.21 6.5l.1.11c0 .23-.07.46-.1.7H15l.07.08v-.08h.4a6.46 6.46 0 0 1 2.21.32 3.38 3.38 0 0 1 1.37.86 3.08 3.08 0 0 1 .71 1.18 4.32 4.32 0 0 1 .24 1.34 3.32 3.32 0 0 1-1.12 2.49 3.74 3.74 0 0 1-2.65 1.07 4.43 4.43 0 0 1-3.69-1.62 7.09 7.09 0 0 1-1.29-4.5A8.6 8.6 0 0 1 13.46 6a14.43 14.43 0 0 1 5.34-4.12l1 1.58a12.06 12.06 0 0 0-3.9 2.84 6.68 6.68 0 0 0-1.5 3.13z"></path></svg>
+						<span class="author"><small> عز الدين بوطاهري </small></span>
+						<span><date><small>28/08/2022</small></date></span>
+					</div>
+					
+				</div>
+			</article>
+
+			<article class="article-card">
+				<div class="card-img">
+					<img src="vaccin_production_sante.webp">
+				</div>
+				<div class="card-content">
+					<h3 class="card-title">
+						<a href="#">علامة استفهام (34) | لماذا يفترق الحبيبان؟</a>
+					</h3>
+					<div class="card-body">
+						<p>يقعان في الحب، يزلزل الغرام حياتهما، يقرران الارتباط ليعيشا معًا حتى الموت، تعترضهما مشاكل عديدة من عائلتهما ومن المجتمع، يواجهان الأمر بشجاعة وصبر وينتصران، يتزوجان.</p>
+					</div>
+					<div class="card-footer">
+						<svg class="icon-quotes icon" viewBox="0 0 20 20" version="1.1" aria-hidden="true"><title>quotes</title><path class="icon-main-color" d="M7.24 2.93a13.6 13.6 0 0 0-4.4 3.58 7.78 7.78 0 0 0-2 4.87 6.3 6.3 0 0 0 1.11 4A3.64 3.64 0 0 0 5 16.69a2.93 2.93 0 0 0 2.09-.85 2.52 2.52 0 0 0 .87-1.9 3.6 3.6 0 0 0-.17-1.09 2.35 2.35 0 0 0-.55-.85 2.71 2.71 0 0 0-1.06-.66 5.82 5.82 0 0 0-1.93-.26H2.14l.08-.89A7.8 7.8 0 0 1 4 5.77a12.25 12.25 0 0 1 3.37-2.63zM3 9.43l.1.11c0 .23-.07.46-.1.7h.74l.07.08v-.08h.4a6.46 6.46 0 0 1 2.21.32 3.38 3.38 0 0 1 1.37.86 3.08 3.08 0 0 1 .71 1.18 4.32 4.32 0 0 1 .21 1.34 3.32 3.32 0 0 1-1.12 2.49A3.74 3.74 0 0 1 5 17.5a4.43 4.43 0 0 1-3.69-1.62A7.09 7.09 0 0 1 0 11.38 8.6 8.6 0 0 1 2.21 6a14.43 14.43 0 0 1 5.34-4.12l1 1.58a12.06 12.06 0 0 0-3.9 2.84 6.68 6.68 0 0 0-1.5 3.13zm15.46-6.5a13.6 13.6 0 0 0-4.4 3.58 7.78 7.78 0 0 0-2 4.87 6.3 6.3 0 0 0 1.11 4 3.64 3.64 0 0 0 3.06 1.32 2.93 2.93 0 0 0 2.09-.85 2.52 2.52 0 0 0 .87-1.9 3.6 3.6 0 0 0-.19-1.1 2.35 2.35 0 0 0-.53-.87 2.71 2.71 0 0 0-1.06-.66 5.82 5.82 0 0 0-1.93-.26h-2.09l.08-.89a7.8 7.8 0 0 1 1.81-4.4 12.25 12.25 0 0 1 3.34-2.63zm-4.21 6.5l.1.11c0 .23-.07.46-.1.7H15l.07.08v-.08h.4a6.46 6.46 0 0 1 2.21.32 3.38 3.38 0 0 1 1.37.86 3.08 3.08 0 0 1 .71 1.18 4.32 4.32 0 0 1 .24 1.34 3.32 3.32 0 0 1-1.12 2.49 3.74 3.74 0 0 1-2.65 1.07 4.43 4.43 0 0 1-3.69-1.62 7.09 7.09 0 0 1-1.29-4.5A8.6 8.6 0 0 1 13.46 6a14.43 14.43 0 0 1 5.34-4.12l1 1.58a12.06 12.06 0 0 0-3.9 2.84 6.68 6.68 0 0 0-1.5 3.13z"></path></svg>
+						<span class="author"><small> عز الدين بوطاهري </small></span>
+						<span><date><small>28/08/2022</small></date></span>
+					</div>
+					
+				</div>
+			</article>
+			<article class="article-card">
+				<div class="card-img">
+					<img src="vaccin_production_sante.webp">
+				</div>
+				<div class="card-content">
+					<h3 class="card-title">
+						<a href="#">علامة استفهام (34) | لماذا يفترق الحبيبان؟</a>
+					</h3>
+					<div class="card-body">
+						<p>يقعان في الحب، يزلزل الغرام حياتهما، يقرران الارتباط ليعيشا معًا حتى الموت، تعترضهما مشاكل عديدة من عائلتهما ومن المجتمع، يواجهان الأمر بشجاعة وصبر وينتصران، يتزوجان.</p>
+					</div>
+					<div class="card-footer">
+						<svg class="icon-quotes icon" viewBox="0 0 20 20" version="1.1" aria-hidden="true"><title>quotes</title><path class="icon-main-color" d="M7.24 2.93a13.6 13.6 0 0 0-4.4 3.58 7.78 7.78 0 0 0-2 4.87 6.3 6.3 0 0 0 1.11 4A3.64 3.64 0 0 0 5 16.69a2.93 2.93 0 0 0 2.09-.85 2.52 2.52 0 0 0 .87-1.9 3.6 3.6 0 0 0-.17-1.09 2.35 2.35 0 0 0-.55-.85 2.71 2.71 0 0 0-1.06-.66 5.82 5.82 0 0 0-1.93-.26H2.14l.08-.89A7.8 7.8 0 0 1 4 5.77a12.25 12.25 0 0 1 3.37-2.63zM3 9.43l.1.11c0 .23-.07.46-.1.7h.74l.07.08v-.08h.4a6.46 6.46 0 0 1 2.21.32 3.38 3.38 0 0 1 1.37.86 3.08 3.08 0 0 1 .71 1.18 4.32 4.32 0 0 1 .21 1.34 3.32 3.32 0 0 1-1.12 2.49A3.74 3.74 0 0 1 5 17.5a4.43 4.43 0 0 1-3.69-1.62A7.09 7.09 0 0 1 0 11.38 8.6 8.6 0 0 1 2.21 6a14.43 14.43 0 0 1 5.34-4.12l1 1.58a12.06 12.06 0 0 0-3.9 2.84 6.68 6.68 0 0 0-1.5 3.13zm15.46-6.5a13.6 13.6 0 0 0-4.4 3.58 7.78 7.78 0 0 0-2 4.87 6.3 6.3 0 0 0 1.11 4 3.64 3.64 0 0 0 3.06 1.32 2.93 2.93 0 0 0 2.09-.85 2.52 2.52 0 0 0 .87-1.9 3.6 3.6 0 0 0-.19-1.1 2.35 2.35 0 0 0-.53-.87 2.71 2.71 0 0 0-1.06-.66 5.82 5.82 0 0 0-1.93-.26h-2.09l.08-.89a7.8 7.8 0 0 1 1.81-4.4 12.25 12.25 0 0 1 3.34-2.63zm-4.21 6.5l.1.11c0 .23-.07.46-.1.7H15l.07.08v-.08h.4a6.46 6.46 0 0 1 2.21.32 3.38 3.38 0 0 1 1.37.86 3.08 3.08 0 0 1 .71 1.18 4.32 4.32 0 0 1 .24 1.34 3.32 3.32 0 0 1-1.12 2.49 3.74 3.74 0 0 1-2.65 1.07 4.43 4.43 0 0 1-3.69-1.62 7.09 7.09 0 0 1-1.29-4.5A8.6 8.6 0 0 1 13.46 6a14.43 14.43 0 0 1 5.34-4.12l1 1.58a12.06 12.06 0 0 0-3.9 2.84 6.68 6.68 0 0 0-1.5 3.13z"></path></svg>
+						<span class="author"><small> عز الدين بوطاهري </small></span>
+						<span><date><small>28/08/2022</small></date></span>
+					</div>
+					
+				</div>
+			</article>
+			<article class="article-card">
+				<div class="card-img">
+					<img src="vaccin_production_sante.webp">
+				</div>
+				<div class="card-content">
+					<h3 class="card-title">
+						<a href="#">علامة استفهام (34) | لماذا يفترق الحبيبان؟</a>
+					</h3>
+					<div class="card-body">
+						<p>يقعان في الحب، يزلزل الغرام حياتهما، يقرران الارتباط ليعيشا معًا حتى الموت، تعترضهما مشاكل عديدة من عائلتهما ومن المجتمع، يواجهان الأمر بشجاعة وصبر وينتصران، يتزوجان.</p>
+					</div>
+					<div class="card-footer">
+						<svg class="icon-quotes icon" viewBox="0 0 20 20" version="1.1" aria-hidden="true"><title>quotes</title><path class="icon-main-color" d="M7.24 2.93a13.6 13.6 0 0 0-4.4 3.58 7.78 7.78 0 0 0-2 4.87 6.3 6.3 0 0 0 1.11 4A3.64 3.64 0 0 0 5 16.69a2.93 2.93 0 0 0 2.09-.85 2.52 2.52 0 0 0 .87-1.9 3.6 3.6 0 0 0-.17-1.09 2.35 2.35 0 0 0-.55-.85 2.71 2.71 0 0 0-1.06-.66 5.82 5.82 0 0 0-1.93-.26H2.14l.08-.89A7.8 7.8 0 0 1 4 5.77a12.25 12.25 0 0 1 3.37-2.63zM3 9.43l.1.11c0 .23-.07.46-.1.7h.74l.07.08v-.08h.4a6.46 6.46 0 0 1 2.21.32 3.38 3.38 0 0 1 1.37.86 3.08 3.08 0 0 1 .71 1.18 4.32 4.32 0 0 1 .21 1.34 3.32 3.32 0 0 1-1.12 2.49A3.74 3.74 0 0 1 5 17.5a4.43 4.43 0 0 1-3.69-1.62A7.09 7.09 0 0 1 0 11.38 8.6 8.6 0 0 1 2.21 6a14.43 14.43 0 0 1 5.34-4.12l1 1.58a12.06 12.06 0 0 0-3.9 2.84 6.68 6.68 0 0 0-1.5 3.13zm15.46-6.5a13.6 13.6 0 0 0-4.4 3.58 7.78 7.78 0 0 0-2 4.87 6.3 6.3 0 0 0 1.11 4 3.64 3.64 0 0 0 3.06 1.32 2.93 2.93 0 0 0 2.09-.85 2.52 2.52 0 0 0 .87-1.9 3.6 3.6 0 0 0-.19-1.1 2.35 2.35 0 0 0-.53-.87 2.71 2.71 0 0 0-1.06-.66 5.82 5.82 0 0 0-1.93-.26h-2.09l.08-.89a7.8 7.8 0 0 1 1.81-4.4 12.25 12.25 0 0 1 3.34-2.63zm-4.21 6.5l.1.11c0 .23-.07.46-.1.7H15l.07.08v-.08h.4a6.46 6.46 0 0 1 2.21.32 3.38 3.38 0 0 1 1.37.86 3.08 3.08 0 0 1 .71 1.18 4.32 4.32 0 0 1 .24 1.34 3.32 3.32 0 0 1-1.12 2.49 3.74 3.74 0 0 1-2.65 1.07 4.43 4.43 0 0 1-3.69-1.62 7.09 7.09 0 0 1-1.29-4.5A8.6 8.6 0 0 1 13.46 6a14.43 14.43 0 0 1 5.34-4.12l1 1.58a12.06 12.06 0 0 0-3.9 2.84 6.68 6.68 0 0 0-1.5 3.13z"></path></svg>
+						<span class="author"><small> عز الدين بوطاهري </small></span>
+						<span><date><small>28/08/2022</small></date></span>
+					</div>
+					
+				</div>
+			</article>
+
+
+
+			</div>
+		</section> 
+		<section class="section-1">
+		 	<div class="top-section-header top-header-dec" style="width: 100%;">
+				<h3> إخترنا لكم </h3>
+			</div>
+			<div class="media" href="#">
+       			<div class="media-img">
+         	    <img src="vaccin_production_sante.webp" href="#" alt="article-title">
+       		    </div>
+      	    <div class="media-description">
+      	    	<span><date><small> السبت 27 غشت 2022 - 13:23 </small></date></span><br>
+      	    	<a href="google.com" id="section-tag">
+					<span> القانون العام </span>
+				</a>
+				
+           		<h3><a href="#">لمغرب وإسبانيا يستعدان لتوقيع اتفاقات في صناعة اللقاحات وتدبير الكوارث  </a></h3>
+      </div>
+    </div>
+    		<div class="media" href="#">
+       			<div class="media-img">
+         	    <img src="vaccin_production_sante.webp" href="#" alt="article-title">
+       		    </div>
+      	    <div class="media-description">
+      	    	<span><date><small> السبت 27 غشت 2022 - 13:23 </small></date></span><br>
+      	    	<a href="google.com" id="section-tag">
+					<span> القانون العام </span>
+				</a>
+				
+           		<h3><a href="#">لمغرب وإسبانيا يستعدان لتوقيع اتفاقات في صناعة اللقاحات وتدبير الكوارث  </a></h3>
+      </div>
+    </div>
+    		<div class="media" href="#">
+       			<div class="media-img">
+         	    <img src="vaccin_production_sante.webp" href="#" alt="article-title">
+       		    </div>
+      	    <div class="media-description">
+      	    	<span><date><small> السبت 27 غشت 2022 - 13:23 </small></date></span><br>
+      	    	<a href="google.com" id="section-tag">
+					<span> القانون العام </span>
+				</a>
+				
+           		<h3><a href="#">لمغرب وإسبانيا يستعدان لتوقيع اتفاقات في صناعة اللقاحات وتدبير الكوارث  </a></h3>
+      </div>
+    </div>
+    		<div class="media" href="#">
+       			<div class="media-img">
+         	    <img src="vaccin_production_sante.webp" href="#" alt="article-title">
+       		    </div>
+      	    <div class="media-description">
+      	    	<span><date><small> السبت 27 غشت 2022 - 13:23 </small></date></span><br>
+      	    	<a href="google.com" id="section-tag">
+					<span> القانون العام </span>
+				</a>
+				
+           		<h3><a href="#">لمغرب وإسبانيا يستعدان لتوقيع اتفاقات في صناعة اللقاحات وتدبير الكوارث  </a></h3>
+      </div>
+    </div>
+    		<div class="media" href="#">
+       			<div class="media-img">
+         	    <img src="vaccin_production_sante.webp" href="#" alt="article-title">
+       		    </div>
+      	    <div class="media-description">
+      	    	<span><date><small> السبت 27 غشت 2022 - 13:23 </small></date></span><br>
+      	    	<a href="google.com" id="section-tag">
+					<span> القانون العام </span>
+				</a>
+				
+           		<h3><a href="#">لمغرب وإسبانيا يستعدان لتوقيع اتفاقات في صناعة اللقاحات وتدبير الكوارث  </a></h3>
+      </div>
+    </div>
+    		<div class="media" href="#">
+       			<div class="media-img">
+         	    <img src="vaccin_production_sante.webp" href="#" alt="article-title">
+       		    </div>
+      	    <div class="media-description">
+      	    	<span><date><small> السبت 27 غشت 2022 - 13:23 </small></date></span><br>
+      	    	<a href="google.com" id="section-tag">
+					<span> القانون العام </span>
+				</a>
+				
+           		<h3><a href="#">لمغرب وإسبانيا يستعدان لتوقيع اتفاقات في صناعة اللقاحات وتدبير الكوارث  </a></h3>
+      </div>
+    </div>
+		</section>
+		<section class="video-section">
+			<div class="top-section-header top-header-dec" style="width: 100%;">
+				<h3><a href="#"> مكتبة المرئيات  </a></h3>
+			</div>
+			<article class="vid-card">
+				<div class="card-img">
+					<img src="vaccin_production_sante.webp">
+					<div class="play-btn"></div>
+				</div>
+				<div class="card-content">
+					<h3 class="card-title">
+						<a href="#">علامة استفهام (34) | لماذا يفترق الحبيبان؟</a>
+					</h3>
+					<div class="card-body">
+						<p>يقعان في الحب، يزلزل الغرام حياتهما، يقرران الارتباط ليعيشا معًا حتى الموت، تعترضهما مشاكل عديدة من عائلتهما ومن المجتمع، يواجهان الأمر بشجاعة وصبر وينتصران، يتزوجان.</p>
+					</div>
+					
+				</div>
+
+			</article>
+			<article class="vid-card">
+				<div class="card-img">
+					<img src="vaccin_production_sante.webp">
+					<div class="play-btn"></div>
+				</div>
+				<div class="card-content">
+					<h3 class="card-title">
+						<a href="#">علامة استفهام (34) | لماذا يفترق الحبيبان؟</a>
+					</h3>
+					<div class="card-body">
+						<p>يقعان في الحب، يزلزل الغرام حياتهما، يقرران الارتباط ليعيشا معًا حتى الموت، تعترضهما مشاكل عديدة من عائلتهما ومن المجتمع، يواجهان الأمر بشجاعة وصبر وينتصران، يتزوجان.</p>
+					</div>
+					<div class="card-footer">
+						
+					</div>
+					
+				</div>
+
+			</article>
+			<article class="vid-card">
+				<div class="card-img">
+					<img src="vaccin_production_sante.webp">
+					<div class="play-btn"></div>
+				</div>
+				<div class="card-content">
+					<h3 class="card-title">
+						<a href="#">علامة استفهام (34) | لماذا يفترق الحبيبان؟</a>
+					</h3>
+					<div class="card-body">
+						<p>يقعان في الحب، يزلزل الغرام حياتهما، يقرران الارتباط ليعيشا معًا حتى الموت، تعترضهما مشاكل عديدة من عائلتهما ومن المجتمع، يواجهان الأمر بشجاعة وصبر وينتصران، يتزوجان.</p>
+					</div>
+					<div class="card-footer">
+						
+					</div>
+					
+				</div>
+
+			</article>
+			<article class="vid-card">
+				<div class="card-img">
+					<img src="vaccin_production_sante.webp">
+					<div class="play-btn"></div>
+				</div>
+				<div class="card-content">
+					<h3 class="card-title">
+						<a href="#">علامة استفهام (34) | لماذا يفترق الحبيبان؟</a>
+					</h3>
+					<div class="card-body">
+						<p>يقعان في الحب، يزلزل الغرام حياتهما، يقرران الارتباط ليعيشا معًا حتى الموت، تعترضهما مشاكل عديدة من عائلتهما ومن المجتمع، يواجهان الأمر بشجاعة وصبر وينتصران، يتزوجان.</p>
+					</div>
+					<div class="card-footer">
+						
+					</div>
+					
+				</div>
+
+			</article>
+			<article class="vid-card">
+				<div class="card-img">
+					<img src="vaccin_production_sante.webp">
+					<div class="play-btn"></div>
+				</div>
+				<div class="card-content">
+					<h3 class="card-title">
+						<a href="#">علامة استفهام (34) | لماذا يفترق الحبيبان؟</a>
+					</h3>
+					<div class="card-body">
+						<p>يقعان في الحب، يزلزل الغرام حياتهما، يقرران الارتباط ليعيشا معًا حتى الموت، تعترضهما مشاكل عديدة من عائلتهما ومن المجتمع، يواجهان الأمر بشجاعة وصبر وينتصران، يتزوجان.</p>
+					</div>
+					<div class="card-footer">
+						
+					</div>
+					
+				</div>
+
+			</article>
+			<article class="vid-card">
+				<div class="card-img">
+					<img src="vaccin_production_sante.webp">
+					<div class="play-btn"></div>
+				</div>
+				<div class="card-content">
+					<h3 class="card-title">
+						<a href="#">علامة استفهام (34) | لماذا يفترق الحبيبان؟</a>
+					</h3>
+					<div class="card-body">
+						<p>يقعان في الحب، يزلزل الغرام حياتهما، يقرران الارتباط ليعيشا معًا حتى الموت، تعترضهما مشاكل عديدة من عائلتهما ومن المجتمع، يواجهان الأمر بشجاعة وصبر وينتصران، يتزوجان.</p>
+					</div>
+					<div class="card-footer">
+						
+					</div>
+					
+				</div>
+
+			</article>
+			
+
+
+
+
+
+
+
+		</section>
+		<section class="section-4">
+			<div class="big-head">
+				<div class="top-section-header top-header-dec">
+				<h3><a href="#"> إجتهادات قضائية </a></h3>
+				</div>
+				<ul>
+					<li>
+						<div class="img-container">
+						<img src="vaccin_production_sante.webp">
+						</div>
+						<h3 class="card-title"><a href="#">الهجرة غير القانونية وآليات حماية وإدماج المهاجرين الأفارقة في المغرب (تقرير أطروحة)</a></h3>
+					</li>
+					<li><a href="#">هشام المومني: الوضعية القانونية للعقار خلال مساطر المعالجة من صعوبات المقاولة (أطروحة)</a></li>
+					<li><a href="#">أطروحة جامعية تقارب تأثير الفقه والقضاء على التشريع المدني المعاصر</a></li>
+					<li><a href="#">مقاربة الأمن وحقوق الإنسان في مواجهة التطرف: ظاهرة الإرهاب نموذجا (تقرير أطروحة)</a></li>
+				</ul>
+			</div>
+			<div class="big-head">
+				<div class="top-section-header top-header-dec">
+				<h3><a href="#">  إجتهادات اخرى </a></h3>
+				</div>
+				<ul>
+					<li>
+						<div class="img-container">
+						<img src="vaccin_production_sante.webp">
+						</div>
+						<h3 class="card-title"><a href="#">الهجرة غير القانونية وآليات حماية وإدماج المهاجرين الأفارقة في المغرب (تقرير أطروحة)</a></h3>
+					</li>
+					<li><a href="#">هشام المومني: الوضعية القانونية للعقار خلال مساطر المعالجة من صعوبات المقاولة (أطروحة)</a></li>
+					<li><a href="#">أطروحة جامعية تقارب تأثير الفقه والقضاء على التشريع المدني المعاصر</a></li>
+					<li><a href="#">مقاربة الأمن وحقوق الإنسان في مواجهة التطرف: ظاهرة الإرهاب نموذجا (تقرير أطروحة)</a></li>
+				</ul>
+			</div>
+			<div class="big-head">
+				<div class="top-section-header top-header-dec">
+				<h3><a href="#"> أطروحات جامعية </a></h3>
+				</div>
+				<ul>
+					<li>
+						<div class="img-container">
+						<img src="vaccin_production_sante.webp">
+						</div>
+						<h3 class="card-title"><a href="#">الهجرة غير القانونية وآليات حماية وإدماج المهاجرين الأفارقة في المغرب (تقرير أطروحة)</a></h3>
+					</li>
+					<li><a href="#">هشام المومني: الوضعية القانونية للعقار خلال مساطر المعالجة من صعوبات المقاولة (أطروحة)</a></li>
+					<li><a href="#">أطروحة جامعية تقارب تأثير الفقه والقضاء على التشريع المدني المعاصر</a></li>
+					<li><a href="#">مقاربة الأمن وحقوق الإنسان في مواجهة التطرف: ظاهرة الإرهاب نموذجا (تقرير أطروحة)</a></li>
+				</ul>
+			</div>
+			<div class="big-head">
+				<div class="top-section-header top-header-dec">
+				<h3><a href="#"> أنشطة علمية </a></h3>
+				</div>
+				<ul>
+					<li>
+						<div class="img-container">
+						<img src="vaccin_production_sante.webp">
+						</div>
+						<h3 class="card-title"><a href="#">الهجرة غير القانونية وآليات حماية وإدماج المهاجرين الأفارقة في المغرب (تقرير أطروحة)</a></h3>
+					</li>
+					<li><a href="#">هشام المومني: الوضعية القانونية للعقار خلال مساطر المعالجة من صعوبات المقاولة (أطروحة)</a></li>
+					<li><a href="#">أطروحة جامعية تقارب تأثير الفقه والقضاء على التشريع المدني المعاصر</a></li>
+					<li><a href="#">مقاربة الأمن وحقوق الإنسان في مواجهة التطرف: ظاهرة الإرهاب نموذجا (تقرير أطروحة)</a></li>
+				</ul>
+			</div>
+			<div class="big-head">
+				<div class="top-section-header top-header-dec">
+				<h3><a href="#"> أخبار قانونية</a></h3>
+				</div>
+				<ul>
+					<li>
+						<div class="img-container">
+						<img src="vaccin_production_sante.webp">
+						</div>
+						<h3 class="card-title"><a href="#">الهجرة غير القانونية وآليات حماية وإدماج المهاجرين الأفارقة في المغرب (تقرير أطروحة)</a></h3>
+					</li>
+					<li><a href="#">هشام المومني: الوضعية القانونية للعقار خلال مساطر المعالجة من صعوبات المقاولة (أطروحة)</a></li>
+					<li><a href="#">أطروحة جامعية تقارب تأثير الفقه والقضاء على التشريع المدني المعاصر</a></li>
+					<li><a href="#">مقاربة الأمن وحقوق الإنسان في مواجهة التطرف: ظاهرة الإرهاب نموذجا (تقرير أطروحة)</a></li>
+				</ul>
+			</div>
+			<div class="big-head">
+				<div class="top-section-header top-header-dec">
+				<h3><a href="#"> متفرقات قانونية </a></h3>
+				</div>
+				<ul>
+					<li>
+						<div class="img-container">
+						<img src="vaccin_production_sante.webp">
+						</div>
+						<h3 class="card-title"><a href="#">الهجرة غير القانونية وآليات حماية وإدماج المهاجرين الأفارقة في المغرب (تقرير أطروحة)</a></h3>
+					</li>
+					<li><a href="#">هشام المومني: الوضعية القانونية للعقار خلال مساطر المعالجة من صعوبات المقاولة (أطروحة)</a></li>
+					<li><a href="#">أطروحة جامعية تقارب تأثير الفقه والقضاء على التشريع المدني المعاصر</a></li>
+					<li><a href="#">مقاربة الأمن وحقوق الإنسان في مواجهة التطرف: ظاهرة الإرهاب نموذجا (تقرير أطروحة)</a></li>
+				</ul>
+			</div>
+		</section>
+	</div>
+
+	
+	</section>
+	
+
+
+
+</main>
+
+<footer>
+	<div class="sm-container">
+	<div class="social-media">
+	<div style="flex:1 0 4.7em;text-align: center;"><span> تابعنا على  : </span></div>
+	<ul class="sm-icons">
+			<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="25px" height="25px"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="#005dc7"/></svg></a></li>
+			<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="25px" height="25px"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" fill="#005dc7"/></svg></a></li>
+			<li><a href="" style="margin-left: 1em;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="25px" height="25px"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" fill="#005dc7"/></svg></a></li>
+		</ul>
+	</div>
+</div>
+	<div class="logo-footer">
+	
+	</div>
+	<div class="footer">
+		<div class="footer-item">
+				<h3>النشرة الإخبارية</h3>
+				<p>اشترك الآن في النشرة البريدية لمجلة مغرب القانون، لتصلك آخر المستجدات!</p>
+				<input type="text" name="news-letter-subscription" placeholder="البريد">
+				<button type="submit"> اشترك </button>
+			</div>
+		<div class="footer-item">
+			<h3> عن مغرب القانون </h3>
+			<div class="footer-link-wrap">
+				<p><a href=""> للنشر في مغرب القانون 
+					</a><span class="slash"></span>
+				</p>
+				<p><a href=""> من نحن ؟ 
+					</a><span class="slash"></span>
+				</p>
+				<p><a href=""> اتصل بنا 
+					</a><span class="slash"></span>
+				</p>
+				<p><a href=""> فريق العمل 
+					</a><span class="slash"></span>
+				</p>
+				<p><a href=""> للإشهار 
+					</a><span class="slash"></span>
+				</p>
+				<p><a href="">كلمة مدير النشر
+					</a><span class="slash"></span>
+				</p>
+			</div>
+
+		</div>
+		
+		<div class="footer-item">
+			<h3> الأقسام </h3>
+			<div class="footer-link-wrap">
+				<p><a href="">أنشطة علمية</a>
+				   <span class="slash"></span>
+				</p>
+				<p><a href="">الاجتهاد القضائي</a> 
+				   <span class="slash"></span>
+				</p>
+				<p><a href=""> المادة الادارية </a> 
+				   <span class="slash"></span></p>
+				<p><a href=""> المادة الادارية </a> 
+				   <span class="slash"></span></p>
+				<p><a href=""> المادة الادارية </a> 
+				   <span class="slash"></span></p>
+				<p><a href=""> المادة الادارية </a> 
+				   <span class="slash"></span>
+			    </p>
+			</div>
+		</div>
+			
+
+		
+		
+	</div>
+	<div class="footer-copyright">جميع الحقوق محفوظة لمجلة مغرب القانون 2022 ©
+	</div>
+
+
+</footer>
+
+
+
+
+
+<script type="text/javascript">
+	(function () {
+	// Creating invisible container
+  const outer = document.createElement('div');
+  outer.style.visibility = 'hidden';
+  outer.style.overflow = 'scroll'; // forcing scrollbar to appear
+  outer.style.msOverflowStyle = 'scrollbar'; // needed for WinJS apps
+  document.body.appendChild(outer);
+
+  // Creating inner element and placing it in the container
+  const inner = document.createElement('div');
+  outer.appendChild(inner);
+
+  // Calculating difference between container's full width and the child width
+  const scrollbarWidth = (outer.offsetWidth - inner.offsetWidth);
+  // Removing temporary elements from the DOM
+  outer.parentNode.removeChild(outer);
+
+  	const nav = document.getElementsByTagName("nav")[0];
+	console.log(nav.offsetHeight);  
+	var button = document.getElementById('menu-burger');
+	var btn = document.getElementById('exit-dropdown');
+	var menu = document.getElementById('nav-menu');
+	var blur = document.getElementById('layer-blur');
+	var index = 0 ;
+	const viewPort = window.visualViewport;
+	viewPort.addEventListener('resize',(event) => {
+		if(menu.classList.contains('is-open')){
+		console.log(menu.offsetWidth);
+		menu.style.transform='translate(-'+(menu.offsetWidth+4+scrollbarWidth)+'px)';
+	}
+	 })
+	function flyout(event) {
+		if(index == 0){
+		event.preventDefault();
+		button.attributes[3].nodeValue='false';
+		menu.classList.toggle('is-open');
+		blur.classList.toggle('blur');
+		blur.style.transition='opacity 0.2s linear,visibility 0s linear .2s';
+	 	blur.style.opacity='0';
+	 	menu.style.transform='translate(0)';
+	 	index = 1;
+	 }
+	}
+	blur.addEventListener('transitionend',function(event){
+		index = 0;
+	})
+	button.addEventListener('click', function(event) {
+		event.preventDefault();
+		console.log('salam');
+		button.attributes[3].nodeValue='true';
+		blur.classList.toggle('blur');
+		menu.classList.toggle('is-open');
+		blur.style.transitionDelay='0s';
+		blur.style.opacity='1';
+		menu.style.transform='translate(-'+(menu.offsetWidth+4+scrollbarWidth)+'px)';
+	});
+	btn.addEventListener('click', flyout);
+	blur.addEventListener('click', flyout);
+	})();
+</script>
+</body>
+</html>
