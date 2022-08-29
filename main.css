@@ -211,7 +211,7 @@ li{
 	all: unset;
 	float: left;
 	background-color: white;
-	background-image: url(images/search.svg);
+	background-image: url(search.svg);
 	background-size: 20px;
 	background-repeat: no-repeat;
 
@@ -731,13 +731,13 @@ main img{
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background-image: url(images/play.svg);
+	background-image: url(play.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 45px 45px;
 }
 .vid-card:hover .play-btn{
-	background-image: url(images/play-hover.svg);
+	background-image: url(play-hover.svg);
 }
 .section-4{
 	display: flex;
