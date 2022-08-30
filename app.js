@@ -57,8 +57,7 @@ window.addEventListener('load', function(){
 	btn.addEventListener('click', flyout);
 	blur.addEventListener('click', flyout);
 
-    var touchsurface = document.getElementById('touchsurface'),
-        swipablesurface = document.getElementsByClassName('slider-img')[0],
+    var swipablesurface = document.getElementsByClassName('slider-img')[0],
         zaap = document.getElementsByClassName('slider-nav')[0].children,
         sliderDescription = document.getElementsByClassName('description-wrapper')[0].children,
         sliderImgs= document.querySelector('.slider-img'),
@@ -71,9 +70,6 @@ window.addEventListener('load', function(){
         elapsedTime,
         startTime;
     var width=sliderImgs.children[0].offsetWidth;
-    var surface = document.querySelector('#surface');
-    var origin=surface.offsetLeft;
-    console.log(touchsurface.clientLeft);
     var length = sliderImgs.children.length-1;
     console.log('amine ' +-200.2 + '%' + Math.abs(-200) +' = ' +(50 % 24));
     swipablesurface.addEventListener('touchstart', function(e){
