@@ -33,11 +33,6 @@ nav svg{
 	fill: #ebb013;
 }
 
-.top-bar > a{
-	margin-right: 1em;
-	text-decoration: none;
-	color: #6e3533;
-}
 .top-bar > a:hover{
 	border-color: #293554;
 	
