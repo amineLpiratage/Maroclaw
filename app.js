@@ -126,8 +126,8 @@ window.addEventListener('load', function(){
         dist = touchobj.pageX - startX; // get total dist traveled by finger while in contact with surface
         elapsedTime = new Date().getTime() - startTime // get time elapsed
         // check that elapsed time is within specified, horizontal dist traveled >= threshold, and vertical dist traveled <= 100
-        sliderImgs.children[actualpos].style.transition='transform 0.5s ease-in';
-        sliderImgs.children[next].style.transition='transform 0.5s ease-in';
+        sliderImgs.children[actualpos].style.transition='transform 0.5s ease-out';
+        sliderImgs.children[next].style.transition='transform 0.5s ease-out';
         console.log('-----' + actualpos+'  '+next);
         console.log(dist / elapsedTime);
         if(Math.abs(dist) >= 150 || Math.abs(dist)/elapsedTime>=0.5){
