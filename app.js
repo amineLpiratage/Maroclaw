@@ -46,7 +46,6 @@ window.addEventListener('load', function(){
 	})
 	button.addEventListener('click', function(event) {
 		event.preventDefault();
-		console.log('salam');
 		button.attributes[3].nodeValue='true';
 		blur.classList.toggle('blur');
 		menu.classList.toggle('is-open');
@@ -90,6 +89,8 @@ window.addEventListener('load', function(){
         dist = e.targetTouches[0].pageX - startX;
         direction = dist / Math.abs(dist);
         next= (actualpos+direction+length)%length;
+        console.log('dis' + Math.abs(e.targetTouches[0].pageY - startY));
+        console.log(Math.abs(dist));
         if(Math.abs(e.targetTouches[0].pageY - startY) > Math.abs(dist) && scrollIndex!=2){
             scrollIndex=1;
         }else{
@@ -111,7 +112,7 @@ window.addEventListener('load', function(){
         console.log(sliderDescription[actualpos].children[0]);
         sliderDescription[actualpos].children[0].children[0].style.transition='unset';
         sliderDescription[actualpos].children[1].style.transition='unset';
-        sliderDescription[i].children[0].children[0].style.transition='opacity 0s ease-in, transform .45s ease-out';
+        sliderDescription[i].children[0].children[0].style.transition='opacity 0s ease-in, transform .45s ease-in .1s';
         sliderDescription[i].children[1].style.transition='opacity 0s ease-out , transform 0s ease-out ';
         sliderDescription[actualpos].classList.remove('infront');
         sliderDescription[i].classList.add('infront');
@@ -135,25 +136,21 @@ window.addEventListener('load', function(){
     },false);
 }
     swipablesurface.addEventListener('touchend', function(e){
-        scrollIndex = 0;
         var touchobj = e.changedTouches[0];
-        console.log(touchobj);
         dist = touchobj.pageX - startX; // get total dist traveled by finger while in contact with surface
         elapsedTime = new Date().getTime() - startTime // get time elapsed
         // check that elapsed time is within specified, horizontal dist traveled >= threshold, and vertical dist traveled <= 100
         sliderImgs.children[actualpos].style.transition='transform 0.5s ease-out';
         sliderImgs.children[next].style.transition='transform 0.5s ease-out';
-        console.log('-----' + actualpos+'  '+next);
-        console.log(dist / elapsedTime);
-        if(Math.abs(dist) >= 100 || Math.abs(dist)/elapsedTime>=0.15){
+        if(Math.abs(dist)*((scrollIndex+1)%2 ) >= 100 || ((scrollIndex+1)%2 ) * Math.abs(dist)/elapsedTime>=0.25){
             moveSlider(next);
             console.log(actualpos +'  ' + direction+'  '+next);
-        }else if(Math.abs(dist) >= 1){
+        }else if(Math.abs(dist)*((scrollIndex+1)%2 ) >= 1){
             sliderImgs.children[actualpos].style.transform='translate(0)'; 
             sliderImgs.children[next].style.transform='translate('+(-direction) * width + 'px)';
         }
         var swiperightBol = (elapsedTime <= allowedTime && dist >= threshold && Math.abs(touchobj.pageY - startY) <= 100)
-        //handleswipe(swiperightBol);
         e.preventDefault();
+        scrollIndex = 0;
     }, false);
 }, false);
