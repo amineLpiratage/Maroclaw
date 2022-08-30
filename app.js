@@ -128,8 +128,9 @@ window.addEventListener('load', function(){
         // check that elapsed time is within specified, horizontal dist traveled >= threshold, and vertical dist traveled <= 100
         sliderImgs.children[actualpos].style.transition='transform 0.5s ease-in';
         sliderImgs.children[next].style.transition='transform 0.5s ease-in';
-        console.log('-----' + actualpos+'  '+next)
-        if(Math.abs(dist) >= 150){
+        console.log('-----' + actualpos+'  '+next);
+        console.log(dist / elapsedTime);
+        if(Math.abs(dist) >= 150 || Math.abs(dist)/elapsedTime>=0.5){
             moveSlider(next);
             console.log(actualpos +'  ' + direction+'  '+next);
         }else if(Math.abs(dist) >= 1){
