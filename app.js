@@ -141,7 +141,7 @@ window.addEventListener('load', function(){
         sliderImgs.children[next].style.transition='transform 0.5s ease-out';
         console.log('-----' + actualpos+'  '+next);
         console.log(dist / elapsedTime);
-        if(Math.abs(dist) >= 150 || Math.abs(dist)/elapsedTime>=0.5){
+        if(Math.abs(dist) >= 100 || Math.abs(dist)/elapsedTime>=0.3){
             moveSlider(next);
             console.log(actualpos +'  ' + direction+'  '+next);
         }else if(Math.abs(dist) >= 1){
