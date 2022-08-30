@@ -61,7 +61,7 @@ window.addEventListener('load', function(){
         zaap = document.getElementsByClassName('slider-nav')[0].children,
         sliderDescription = document.getElementsByClassName('description-wrapper')[0].children,
         sliderImgs= document.querySelector('.slider-img'),
-        actualpos=0,next = 1,direction=1,
+        actualpos=0,next = 1,direction=1,scrollIndex,
         startX,
         startY,
         dist,
@@ -87,14 +87,24 @@ window.addEventListener('load', function(){
     }, false)
  
     swipablesurface.addEventListener('touchmove', function(e){
-        e.preventDefault(); // prevent scrolling when inside DIV
         dist = e.targetTouches[0].pageX - startX;
         direction = dist / Math.abs(dist);
         next= (actualpos+direction+length)%length;
-        sliderImgs.children[actualpos].style.transform='translate('+dist + 'px)';  
-        sliderImgs.children[next].style.transform='translate('+((-direction) * width + dist) + 'px)';
+        if(Math.abs(e.targetTouches[0].pageY - startY) > Math.abs(dist) && scrollIndex!=2){
+            scrollIndex=1;
+        }else{
+            if(scrollIndex%2 == 0 ){
+            scrollIndex = 2;
+            e.preventDefault(); // prevent scrolling when inside DIV
+            sliderImgs.children[actualpos].style.transform='translate('+dist + 'px)';  
+            sliderImgs.children[next].style.transform='translate('+((-direction) * width + dist) + 'px)';
+            }
+        }
         
-    }, false)
+        
+        
+        
+    },false);
     function moveSlider(i){
         if(i!=actualpos){
         console.log('====>' +i);
@@ -121,6 +131,7 @@ window.addEventListener('load', function(){
     },false);
 }
     swipablesurface.addEventListener('touchend', function(e){
+        scrollIndex = 0;
         var touchobj = e.changedTouches[0];
         console.log(touchobj);
         dist = touchobj.pageX - startX; // get total dist traveled by finger while in contact with surface
@@ -130,7 +141,7 @@ window.addEventListener('load', function(){
         sliderImgs.children[next].style.transition='transform 0.5s ease-out';
         console.log('-----' + actualpos+'  '+next);
         console.log(dist / elapsedTime);
-        if(Math.abs(dist) >= 150 || Math.abs(dist)/elapsedTime>=0.3){
+        if(Math.abs(dist) >= 150 || Math.abs(dist)/elapsedTime>=0.5){
             moveSlider(next);
             console.log(actualpos +'  ' + direction+'  '+next);
         }else if(Math.abs(dist) >= 1){
