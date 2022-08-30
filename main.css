@@ -117,7 +117,7 @@ nav svg{
 }
 .dropdown-item li a{
 	display: block;
-	padding: .25em 0;
+	padding: .5em 0;
 	font-weight: 300;
 	color: #464646;
 	border-bottom: 1px solid hsla(0,0%,9%,.1);
@@ -348,16 +348,15 @@ li{
 .sld{
 	display: flex;
 	flex-wrap: wrap;
-	align-items: flex-start;
+	align-items: center;
 }
 .slider-img{
 	width: 65%;
 	flex-grow: 1;
 	flex-shrink: 1;
-	height: calc(30vh + 25vw);
+	height: calc(15vh + 35vw);
 	max-height: 60vh;
 	border-radius: 10px;
-	margin-top: 1em;
     overflow: hidden;
     position: relative;
 }
@@ -403,7 +402,12 @@ li{
 	margin: 0 1.5em;
 	overflow: hidden;
 }
-
+.slider-description{
+	visibility: hidden;
+}
+.slider-description.infront{
+	visibility: visible;
+}
 .slider-description:nth-child(n+2){
 	position: absolute;
 	left: 0;
