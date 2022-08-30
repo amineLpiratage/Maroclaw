@@ -83,7 +83,6 @@ window.addEventListener('load', function(){
         startX = touchobj.pageX;
         startY = touchobj.pageY;
         startTime = new Date().getTime(); // record time when finger first makes contact with surface
-       // e.preventDefault();
     }, false)
  
     swipablesurface.addEventListener('touchmove', function(e){
@@ -107,8 +106,6 @@ window.addEventListener('load', function(){
     },false);
     function moveSlider(i){
         if(i!=actualpos){
-        console.log('====>' +i);
-        console.log(i+'   ' + actualpos);
         sliderDescription[actualpos].classList.remove('infront');
         sliderDescription[i].classList.add('infront');
         zaap[actualpos].classList.remove('current');
@@ -121,11 +118,9 @@ window.addEventListener('load', function(){
     for(let i=0;i<zaap.length;i++){
     zaap[i].addEventListener('click',function(){
         direction = i > actualpos? 1 : -1;
-        console.log('im clicked');
         moveSlider(i);
     },false);
     zaap[i].addEventListener('touchstart',function(){
-        console.log('im clicked');
         direction = i > actualpos? 1 : -1;
         moveSlider(i);
     },false);
@@ -133,7 +128,6 @@ window.addEventListener('load', function(){
     swipablesurface.addEventListener('touchend', function(e){
         scrollIndex = 0;
         var touchobj = e.changedTouches[0];
-        console.log(touchobj);
         dist = touchobj.pageX - startX; // get total dist traveled by finger while in contact with surface
         elapsedTime = new Date().getTime() - startTime // get time elapsed
         // check that elapsed time is within specified, horizontal dist traveled >= threshold, and vertical dist traveled <= 100
@@ -141,15 +135,13 @@ window.addEventListener('load', function(){
         sliderImgs.children[next].style.transition='transform 0.5s ease-out';
         console.log('-----' + actualpos+'  '+next);
         console.log(dist / elapsedTime);
-        if(Math.abs(dist) >= 100 || Math.abs(dist)/elapsedTime>=0.3){
+        if(Math.abs(dist) >= 100 || Math.abs(dist)/elapsedTime>=0.2){
             moveSlider(next);
             console.log(actualpos +'  ' + direction+'  '+next);
         }else if(Math.abs(dist) >= 1){
             sliderImgs.children[actualpos].style.transform='translate(0)'; 
             sliderImgs.children[next].style.transform='translate('+(-direction) * width + 'px)';
         }
-        var swiperightBol = (elapsedTime <= allowedTime && dist >= threshold && Math.abs(touchobj.pageY - startY) <= 100)
-        //handleswipe(swiperightBol);
         e.preventDefault();
     }, false);
 }, false);
