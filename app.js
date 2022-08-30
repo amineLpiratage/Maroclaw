@@ -111,7 +111,7 @@ window.addEventListener('load', function(){
         console.log(sliderDescription[actualpos].children[0]);
         sliderDescription[actualpos].children[0].children[0].style.transition='unset';
         sliderDescription[actualpos].children[1].style.transition='unset';
-        sliderDescription[i].children[0].children[0].style.transition='opacity 0s ease-in, transform .45s ease-in';
+        sliderDescription[i].children[0].children[0].style.transition='opacity 0s ease-in, transform .45s ease-out';
         sliderDescription[i].children[1].style.transition='opacity 0s ease-out , transform 0s ease-out ';
         sliderDescription[actualpos].classList.remove('infront');
         sliderDescription[i].classList.add('infront');
