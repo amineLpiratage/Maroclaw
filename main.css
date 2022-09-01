@@ -28,6 +28,8 @@ body{
     --btn-color-secondary : #000;
     --main-nav-height :60px;
     --color-primary :#fff;
+    --arrow-black : url(images/arrow-right-solid.svg);
+    --arrow-white : url(images/arrow-right-solid-2.svg);
 }
 img{
     max-width: 100%;
@@ -53,17 +55,20 @@ img{
     -webkit-tap-highlight-color: transparent;
 }
 .btn::before{
-    content: "\1F852";
+    content: "";
     display: inline-block;
     position: absolute;
     font-size: 1.3em;
     font-weight: 100;
-    top: 53%;
+    height: 18px;
+    width: 18px;
+    background-image:var(--arrow-white) ;
+    background-repeat: no-repeat;
+    top: 50%;
     transform: translateY(-50%);
     right: 23px;
     transition: all .2s;
     z-index: 1;
-    color: var(--btn-color);
 }
 .btn::after{
     content: "";
@@ -78,8 +83,8 @@ img{
     transition: all .2s;
 }
 .btn:hover::before{
-    color: var(--btn-color-secondary);
-    right: 34px;
+    background-image: var(--arrow-black);
+    right: 37px;
 }
 .btn:hover::after{
     width: 43px;
@@ -202,7 +207,6 @@ nav {
 .nav-call-to-action{
     width: 560px;
     flex-grow: 1;
-    margin-right: 50px;
 }
 .nav-call-to-action .top-head-2{
     font-family: 'Tiempos Text Regular',serif;
@@ -229,6 +233,7 @@ nav {
 }
 .drop-down-menu .footer-nav > li > a{
     color: white;
+    font-size: 1.5rem;
 }
 .drop-down-footer{
     width: 100%;
@@ -255,13 +260,17 @@ nav {
 
 footer .footer-nav{
     font-weight: 700;
-    padding: ;
 }
 .footer-nav{
     column-count: 2;
     --color-primary: #000; 
     list-style-type: none;
     padding: 72px 6vw 72px 6vw;
+}
+@media(max-width :385px){
+    .footer-nav{
+        padding: 72px 0 ;
+    }
 }
 .footer-nav >li >a,
 .main-nav-bar .sections-list > li > a{
@@ -453,6 +462,8 @@ a{
 .tab-content .btn{
     --btn-color : #000;
     --btn-color-secondary:#fff;
+    --arrow-white : url(images/arrow-right-solid.svg);
+    --arrow-black:url(images/arrow-right-solid-2.svg);
 }
 .animated-show{
     background-color: #000;
@@ -485,6 +496,7 @@ footer{
     align-items: flex-start;
     background-color: #fff;
     padding: 32px 32px 0;
+    overflow: hidden;
 }
 footer .top-head-2{
     text-align: left;
@@ -510,6 +522,8 @@ footer nav{
 .call-to-action .btn{
     --btn-color : #000;
     --btn-color-secondary:#fff;
+    --arrow-white : url(arrow-right-solid.svg);
+    --arrow-black:url(arrow-right-solid-2.svg);
 }
 @media (min-width : 760px){
     .scroll-animate{
