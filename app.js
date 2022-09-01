@@ -1,9 +1,10 @@
 
 const burgerBtn = document.getElementById('burger-menu'),
+      dropdownMenu = document.getElementsByClassName('drop-down-menu')[0],
       contentTabs =document.getElementsByClassName('content-wrapper')[0].children,
       tabContainer =document.getElementsByClassName('tab-container')[0].children,
       skillsContainer = document.getElementsByClassName('scroll-animate')[0].children;
-var   prevTab=0,scrollIndex=0,firstTime=0;
+var   prevTab=0,scrollIndex=0,k=0;
 console.log(contentTabs[0]);
 // function animateTabs(i){
 //     if(prevTab != i){
@@ -33,7 +34,19 @@ for(let i=0;i<4;i++){
 burgerBtn.addEventListener('click',function(e){
     e.preventDefault();
     burgerBtn.classList.toggle('active');
-})
+    dropdownMenu.classList.toggle('visible');
+    k=(k+1)%2;
+});
+dropdownMenu.addEventListener('touchmove',function(e){
+    e.preventDefault();
+});
+window.addEventListener('wheel',function(e){
+    if(k==1){
+    e.preventDefault();
+    e.stopPropagation();
+}
+    console.log('im scrolled');
+},{passive: false});
 
 let options = {
     root: null,
@@ -108,6 +121,15 @@ observer2.observe(skillsContainer[2]);
       //prevRatio = entry.intersectionRatio;
     });
   }
+const call2action = document.getElementsByClassName('call-to-action')[0];
+let observer5 = new IntersectionObserver(function(entries,observer){
+    entries.forEach((entry) => {
+    if(entry.intersectionRatio>0.7){
+    call2action.classList.add('active');
+    }
+    });
+}, options);
+observer5.observe(call2action);
   
 
   
