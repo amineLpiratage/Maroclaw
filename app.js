@@ -45,7 +45,6 @@ window.addEventListener('wheel',function(e){
     e.preventDefault();
     e.stopPropagation();
 }
-    console.log('im scrolled');
 },{passive: false});
 
 let options = {
@@ -130,6 +129,51 @@ let observer5 = new IntersectionObserver(function(entries,observer){
     });
 }, options);
 observer5.observe(call2action);
-  
 
-  
+var n=0;
+partnerlogo = document.getElementsByClassName('infinite-slide')[0];
+let observateur = new IntersectionObserver(function(entries,observateur){
+    entries.forEach((entry) => {
+    if(entry.intersectionRatio>0){
+        console.log(entry.intersectionRatio)
+        n=1;
+        
+    }else{
+        n=0;
+    }
+    });
+}, options);
+observateur.observe(partnerlogo);
+const viewPort = window.visualViewport;
+var vpWidth=viewPort.width;
+
+viewPort.addEventListener('resize',(event) => {
+    vpWidth=viewPort.width;
+		
+});
+var interval = setInterval(f,10);
+
+var containerWidth = 5*Math.min(vpWidth/4,200)+16/100 * vpWidth,xpos1=-(containerWidth),xpos2=-3*containerWidth ;
+console.log(vpWidth +'px' + containerWidth);
+
+function f(){
+    if(n==1 && vpWidth <= containerWidth){
+        xpos1+=1;
+        xpos2+=1;
+        if(xpos2 >= -containerWidth && xpos2<-containerWidth+1){
+            console.log('---'+xpos1 + '   '+-containerWidth + Math.min(vpWidth - containerWidth,0));
+            xpos1 = -containerWidth ;
+        }
+
+        if(xpos1 >= 0 && xpos1<1){
+            console.log('--'+xpos2 + '   '+-containerWidth + Math.min(vpWidth - containerWidth,0));
+            xpos2 = -2*containerWidth;
+        }
+        partnerlogo.children[0].style.transform ='translate(' + xpos1+ 'px)';
+        partnerlogo.children[1].style.transform ='translate(' + xpos2+ 'px)';
+      //  partnerlogo.children[1].style.transform ='translate(' + xpos2+ 'px)';
+        // partnerlogo.children[2].style.transform ='translate(' + xpos+ 'px)';
+        // partnerlogo.children[3].style.transform ='translate(' + xpos+ 'px)';
+        // partnerlogo.children[4].style.transform ='translate(' + xpos+ 'px)';
+    }
+}
