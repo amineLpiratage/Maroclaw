@@ -28,8 +28,8 @@ body{
     --btn-color-secondary : #000;
     --main-nav-height :60px;
     --color-primary :#fff;
-    --arrow-black : url(images/arrow-right-solid.svg);
-    --arrow-white : url(images/arrow-right-solid-2.svg);
+    --arrow-black : url(arrow-right-solid.svg);
+    --arrow-white : url(arrow-right-solid-2.svg);
 }
 @keyframes animate-logo{
     0%{
@@ -497,8 +497,8 @@ a{
 .tab-content .btn{
     --btn-color : #000;
     --btn-color-secondary:#fff;
-    --arrow-white : url(images/arrow-right-solid.svg);
-    --arrow-black:url(images/arrow-right-solid-2.svg);
+    --arrow-white : url(arrow-right-solid.svg);
+    --arrow-black:url(arrow-right-solid-2.svg);
 }
 .animated-show{
     background-color: #000;
@@ -575,8 +575,8 @@ footer nav{
 .call-to-action .btn{
     --btn-color : #000;
     --btn-color-secondary:#fff;
-    --arrow-white : url(images/arrow-right-solid.svg);
-    --arrow-black:url(images/arrow-right-solid-2.svg);
+    --arrow-white : url(arrow-right-solid.svg);
+    --arrow-black:url(arrow-right-solid-2.svg);
 }
 @media (min-width : 760px){
     .scroll-animate{
